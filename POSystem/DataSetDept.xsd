@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetDept" targetNamespace="http://tempuri.org/DataSetDept.xsd" xmlns:mstns="http://tempuri.org/DataSetDept.xsd" xmlns="http://tempuri.org/DataSetDept.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Settings)" PropertyReference="ApplicationSettings.POSystem.Properties.Settings.GlobalReference.Default.ConnectionString" Provider="Devart.Data.SQLite" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="departements_testTableAdapter" GeneratorDataComponentClassName="departements_testTableAdapter" Name="departements_test" UserDataComponentName="departements_testTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectName="&quot;main&quot;.departements_test" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT departement FROM "main".departements_test</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="departement" DataSetColumn="departement" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectName="&quot;main&quot;.departements_test" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT DISTINCT departement FROM "main".departements_test</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetDept" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSetDept" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DataSetDept">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="departements_test" msprop:Generator_RowClassName="departements_testRow" msprop:Generator_RowEvHandlerName="departements_testRowChangeEventHandler" msprop:Generator_RowDeletedName="departements_testRowDeleted" msprop:Generator_RowDeletingName="departements_testRowDeleting" msprop:Generator_RowEvArgName="departements_testRowChangeEvent" msprop:Generator_TablePropName="departements_test" msprop:Generator_RowChangedName="departements_testRowChanged" msprop:Generator_UserTableName="departements_test" msprop:Generator_RowChangingName="departements_testRowChanging" msprop:Generator_TableClassName="departements_testDataTable" msprop:Generator_TableVarName="tabledepartements_test">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="departement" msprop:Generator_UserColumnName="departement" msprop:Generator_ColumnPropNameInTable="departementColumn" msprop:Generator_ColumnPropNameInRow="departement" msprop:Generator_ColumnVarNameInTable="columndepartement" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
